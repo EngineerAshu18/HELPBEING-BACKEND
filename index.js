@@ -65,12 +65,12 @@ import { Volunteer } from "./models/Volunteer.js";
 import UploadRoutes from "./routes/UploadRoutes.js"
 import AuthRouter from "./routes/UserAuthRoute.js";
 import { reportAndVolunteer } from "./routes/ReportAndVolunteer.js";
-import { razorRouter } from "./routes/RazorPay.js";
+// import { razorRouter } from "./routes/RazorPay.js";
 
 app.use("/api", UploadRoutes );
 app.use("/api/auth", authLimit, AuthRouter);
 app.use("/api/admin",authLimit, reportAndVolunteer );
-app.use("/api/payment", razorRouter );
+// app.use("/api/payment", razorRouter );
 
  
 
